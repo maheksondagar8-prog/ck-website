@@ -1,0 +1,105 @@
+.navbar {
+    background-color: var(--blue-theme-nav-background-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+    &_container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: inherit;
+        padding: 0px 20px;
+        flex: 1;
+
+        &_logo {
+            color: var(--blue-theme-main-color);
+            cursor: pointer;
+        }
+
+        &_menu {
+            display: flex;
+            list-style: none;
+            text-align: center;
+
+            &_item {
+                font-size: 18px;
+                line-height: 40px;
+                margin-right: 18px;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    width: 0;
+                    background: transparent;
+                    transition: all 0.5s ease;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    background: var(--blue-theme-main-color);
+                }
+
+                &_links {
+                    color: var(--blue-theme-main-color);
+                    text-decoration: none;
+                    padding: 2px;
+                }
+            }
+
+
+        }
+    }
+}
+
+.nav-icon {
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    .navbar_container_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 999;
+
+        &.active {
+            background: #181818;
+            left: 0px;
+            opacity: 1;
+        }
+
+        &_item {
+            border-bottom: 1px solid #282828;
+            margin: 0px;
+            padding: 20px 0px;
+
+            &:hover::after {
+                background: var(--blue-theme-main-color);
+                width: 8% !important;
+                background: var(--blue-theme-main-color);
+                display: flex;
+                align-items: center;
+                margin: auto;
+            }
+        }
+
+    }
+
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        color: var(--blue-theme-main-color);
+        padding-right: 20px;
+        z-index: 1000;
+    }
+}
