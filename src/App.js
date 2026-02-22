@@ -7,7 +7,6 @@ import Gallery from './pages/gallery';
 import Contact from './pages/contact';
 import Navbar from './components/navbar';
 
-console.log({ Home, About, Services, Gallery, Contact, Navbar });
 function App() {
   return (
     <div className="App">

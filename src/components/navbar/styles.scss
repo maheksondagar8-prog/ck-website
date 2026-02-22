@@ -1,6 +1,6 @@
 .navbar {
     background-color: var(--blue-theme-nav-background-color);
-    height: 80px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,12 @@
         &_logo {
             color: var(--blue-theme-main-color);
             cursor: pointer;
+
+            img {
+                height: 70px;
+                width: 71px;
+                border-radius: 50%;
+            }
         }
 
         &_menu {

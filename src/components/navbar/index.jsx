@@ -3,12 +3,13 @@ import { FaBars, FaReact } from "react-icons/fa";
 import { HiX } from "react-icons/hi"
 import { Link } from "react-router-dom"
 import './styles.scss';
+import logo from '../../assets/3.png';
+
 const data = [
     { label: 'Home', to: '/' },
-    { label: 'About Me', to: '/about' },
-    { label: 'Resume', to: '/resume' },
-    { label: 'Skills', to: '/skills' },
-    { label: 'Project', to: '/project' },
+    { label: 'About', to: '/about' },
+    { label: 'Services', to: '/services' },
+    { label: 'Gallery', to: '/gallery' },
     { label: 'Contact', to: '/contact' }
 ]
 const Navbar = () => {
@@ -23,7 +24,7 @@ const Navbar = () => {
             <nav className="navbar">
                 <div className="navbar_container">
                     <Link to={'/'} className="navbar_container_logo">
-                        <FaReact size={30} />
+                        <img src={logo} alt="Company Logo" className="navbar_container_logo" />
                     </Link>
                 </div>
 
