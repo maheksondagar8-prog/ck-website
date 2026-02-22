@@ -1,0 +1,24 @@
+.about {
+    background-image: url('../../assets/bg-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &_title{
+        color: var(--blue-theme-main-color);
+        font-size: 25px;
+        padding: 5px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+
+    &_content {
+        color: var(--blue-theme-sub-text-color);
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        display: flex;
+        gap: 14px;
+    }
+}

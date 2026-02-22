@@ -1,50 +1,50 @@
 import { useState } from "react";
-import { FaBars, FaReact } from "react-icons/fa";
-import { HiX } from "react-icons/hi"
-import { Link } from "react-router-dom"
+import { FaBars } from "react-icons/fa";
+import { HiX } from "react-icons/hi";
 import './styles.scss';
 import logo from '../../assets/3.png';
 
 const data = [
-    { label: 'Home', to: '/' },
-    { label: 'About', to: '/about' },
-    { label: 'Services', to: '/services' },
-    { label: 'Gallery', to: '/gallery' },
-    { label: 'Contact', to: '/contact' }
-]
-const Navbar = () => {
-    const [toggleIcon, setToggleIcon] = useState(false)
+    { label: 'Home', id: 'home' },
+    { label: 'About', id: 'about' },
+    { label: 'Services', id: 'services' },
+    { label: 'Gallery', id: 'gallery' },
+    { label: 'Contact', id: 'contact' }
+];
 
-    const handleToggleIcon = () => {
-        setToggleIcon(!toggleIcon)
-    }
+const Navbar = () => {
+    const [toggleIcon, setToggleIcon] = useState(false);
+
+    const handleScroll = (id) => {
+        const section = document.getElementById(id);
+        section?.scrollIntoView({ behavior: 'smooth' });
+        setToggleIcon(false);
+    };
 
     return (
-        <div>
-            <nav className="navbar">
-                <div className="navbar_container">
-                    <Link to={'/'} className="navbar_container_logo">
-                        <img src={logo} alt="Company Logo" className="navbar_container_logo" />
-                    </Link>
-                </div>
+        <nav className="navbar">
+            <div className="navbar_container">
+                <img src={logo} alt="Company Logo" className="navbar_container_logo" />
+            </div>
 
-                <ul className={`navbar_container_menu ${toggleIcon ? "active" : ""}`}>
-                    {
-                        data.map((item, key) => (
-                            <li key={key} className="navbar_container_menu_item" >
-                                <Link className="navbar_container_menu_item_links" to={item.to}
-                                    onClick={() => setToggleIcon(false)}>
-                                    {item.label}
-                                </Link>
-                            </li>
-                        ))
-                    }
-                </ul>
-                <div className="nav-icon" onClick={handleToggleIcon}>
-                    {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
-                </div>
-            </nav>
-        </div>
-    )
-}
+            <ul className={`navbar_container_menu ${toggleIcon ? "active" : ""}`}>
+                {data.map((item, index) => (
+                    <li key={index} className="navbar_container_menu_item">
+                        <button
+                            className="navbar_container_menu_item_links"
+                            onClick={() => handleScroll(item.id)}
+                        >
+                            {item.label}
+                        </button>
+                    </li>
+                ))}
+            </ul>
+
+            <div className="nav-icon" onClick={() => setToggleIcon(!toggleIcon)}>
+                {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
+            </div>
+        </nav>
+    );
+};
+
 export default Navbar;
