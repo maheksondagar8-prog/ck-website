@@ -40,3 +40,16 @@
         border-right: none;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .home {
+        &_title {
+            top: 53px;
+            font-size: 20px;
+            white-space: normal;
+            width: auto;
+            border-right: none;
+            animation: none;
+        }
+    }
+}
