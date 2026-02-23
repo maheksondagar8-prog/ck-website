@@ -1,5 +1,6 @@
 import './App.scss';
 import Navbar from './components/navbar';
+import ScrollToTop from './components/scrollToTop/scrollToTop';
 import Home from './pages/home';
 import About from './pages/about';
 import Services from './pages/services';
@@ -30,6 +31,8 @@ function App() {
       <section id="contact">
         <Contact />
       </section>
+
+      <ScrollToTop />
     </div>
   );
 }

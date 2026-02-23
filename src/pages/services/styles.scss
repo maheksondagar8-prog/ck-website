@@ -1,0 +1,36 @@
+.services {
+    background-image: url('../../assets/bg-5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &_main_title {
+        color: #1a181b;
+        font-size: 30px;
+        padding: 5px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+
+    &_content {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        color: #680000;
+        font-size: 18px;
+        justify-content: space-around;
+
+        &_title {
+            color: #373737;
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+
+        &_sub_title {
+            color: #000000;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    }
+}

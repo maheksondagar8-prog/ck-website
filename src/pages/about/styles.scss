@@ -1,12 +1,12 @@
 .about {
-    background-image: url('../../assets/bg-3.jpg');
+    background-image: url('../../assets/bg-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     &_title{
-        color: var(--blue-theme-main-color);
-        font-size: 25px;
+        color: #d2cfb4;
+        font-size: 30px;
         padding: 5px;
         font-weight: 600;
         display: flex;
