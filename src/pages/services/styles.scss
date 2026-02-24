@@ -34,3 +34,36 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .services {
+        &_main_title {
+            color: #1a181b;
+            font-size: 20px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+        }
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #680000;
+            font-size: 14px;
+            justify-content: space-around;
+        }
+
+        &_title {
+            color: #373737;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        &_sub_title {
+            color: #000000;
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+    }
+}
