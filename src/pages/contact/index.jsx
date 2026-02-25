@@ -1,7 +1,7 @@
 import './styles.scss';
-import { BsInfoCircleFill } from 'react-icons/bs'
 import emailjs from "emailjs-com";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
     const formRef = useRef();
@@ -11,8 +11,8 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                "service_etxv1xm",
-                "template_p7m0lek",
+                "service_ckps615",
+                "template_7nps7m9",
                 formRef.current,
                 "4JYi2Qu2MwINrYNBH"
             )
@@ -28,6 +28,13 @@ const Contact = () => {
     };
     return (
         <section className="contact">
+
+            <motion.div className='contact_title'
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}>
+                Contact US
+            </motion.div>
 
             <form
                 ref={formRef}

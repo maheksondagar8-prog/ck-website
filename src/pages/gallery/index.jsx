@@ -68,7 +68,7 @@ const Gallery = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}>
-                Our Work
+                Our Work Gallery
             </motion.div>
 
             <Masonry

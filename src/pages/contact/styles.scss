@@ -1,4 +1,12 @@
 .contact {
+
+    &_title {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 40px;
+        color: var(--blue-theme-main-color);
+    }
+
     &_content {
         padding: 20px;
 
