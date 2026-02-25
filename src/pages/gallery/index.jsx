@@ -24,6 +24,10 @@ import wooden from "../../assets/wooden.jpg";
 import door from "../../assets/door.jpg";
 import window4 from "../../assets/window-4.jpg";
 import smallwin from "../../assets/small-win.jpg";
+import building from "../../assets/building.jpg";
+import building1 from "../../assets/building-1.jpg";
+import building2 from "../../assets/building-2.jpg"
+import building3 from "../../assets/building-3.jpg"
 import video1 from "../../assets/video-1.mp4";
 
 const media = [
@@ -51,6 +55,10 @@ const media = [
     { type: "image", src: door },
     { type: "image", src: window4 },
     { type: "image", src: smallwin },
+    { type: "image", src: building },
+    { type: "image", src: building1 },
+    { type: "image", src: building2 },
+    { type: "image", src: building3 },
 ];
 
 const breakpointColumnsObj = {
