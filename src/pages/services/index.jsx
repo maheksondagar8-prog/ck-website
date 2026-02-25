@@ -21,21 +21,22 @@ const Services = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                viewport={{ once: false  }}
+                viewport={{ once: false }}
             >
                 Our Services
             </motion.div>
 
-            <div className='services_content'>
+            <div className="services_content">
                 <motion.div
+                    className="services_card"
                     custom="left"
                     variants={cardVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false  }}
+                    viewport={{ once: false }}
                 >
-                    <div className='services_content_title'>Modern Furniture Solutions</div>
-                    <div className='services_content_sub_title'>
+                    <div className="services_content_title">Modern Furniture Solutions</div>
+                    <div className="services_content_sub_title">
                         We design and manufacture all types of modern furniture, including:
                     </div>
                     <ul>
@@ -50,14 +51,17 @@ const Services = () => {
                 </motion.div>
 
                 <motion.div
+                    className="services_card"
                     custom="right"
                     variants={cardVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false  }}
+                    viewport={{ once: true }}
                 >
-                    <div className='services_content_title'>Aluminum & Toughened Glass Work</div>
-                    <div className='services_content_sub_title'>
+                    <div className="services_content_title">
+                        Aluminum & Toughened Glass Work
+                    </div>
+                    <div className="services_content_sub_title">
                         We provide complete aluminum and toughened glass solutions such as:
                     </div>
                     <ul>
