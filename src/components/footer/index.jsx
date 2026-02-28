@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
 
             <div className="footer_copyright">
-                © 2026 Shree Furniture & Aluminum Works. All Rights Reserved.
+                © 2026 Shree Chamunda Krupa Furniture & Aluminum Works. All Rights Reserved.
             </div>
         </footer>
     )
