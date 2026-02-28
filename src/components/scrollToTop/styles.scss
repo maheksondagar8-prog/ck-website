@@ -1,4 +1,6 @@
 .scrollStyle {
+    position: relative;
+
     &_scroll_top {
         position: fixed;
         bottom: 30px;
@@ -17,5 +19,23 @@
         &:hover {
             background: #8b0000;
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .scrollStyle_scroll_top {
+        right: 83px;
+        bottom: 15px;
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .scrollStyle_scroll_top {
+        right: 85px;
+        bottom: 15px;
+        width: 38px;
+        height: 38px;
     }
 }

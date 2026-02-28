@@ -33,7 +33,7 @@ const Contact = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}>
-                Contact US
+                <h3 className="contact_content_header-text">Let`s Talk</h3>
             </motion.div>
 
             <form
@@ -41,7 +41,6 @@ const Contact = () => {
                 onSubmit={sendEmail}
                 className="contact_content">
 
-                <h3 className="contact_content_header-text">Let`s Talk</h3>
                 <div className="contact_content_form_controlwrapper">
                     <div className="nameWrapper">
                         <input required name="name" className="inputName" type={'text'}></input>

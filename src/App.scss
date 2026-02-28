@@ -1,15 +1,20 @@
-.App {
-    height: 100%;
-
-    &_main-page-contain {
-        height: calc(100% - 80px);
-    }
-
-    section{
-        margin-bottom: 16px;
-    }
+* {
+    box-sizing: border-box;
 }
 
-html {
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    // overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+.App {
+    height: 100vh;
+
+    &_main-page-contain {
+        min-height: calc(100vh - 80px); // safer
+    }
 }
