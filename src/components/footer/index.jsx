@@ -46,7 +46,8 @@ const Footer = () => {
                         <div className="contact-text">
                             <span className="contact-label">Call Us</span>
                             <a href="tel:+918849953614">+91 88499 53614</a> (Keval Gajjar)<br />
-                            <a href="tel:+919879077023">+91 98790 77023</a> (Rahul Maru)
+                            <a href="tel:+919879077023">+91 98790 77023</a> (Rahul Maru)<br />
+                            <a href="tel:+919879077023">+91 9537740315</a> (Kiritbhai Gajjar)
                         </div>
                     </div>
 
